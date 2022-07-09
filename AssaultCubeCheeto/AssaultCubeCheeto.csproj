@@ -33,8 +33,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.DirectX.Direct3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.DirectX.Direct3DX.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,11 +57,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="src\Core\Camera.cs" />
+    <Compile Include="src\AssaultCube\GameMode.cs" />
+    <Compile Include="src\Core\FpsCounter.cs" />
+    <Compile Include="src\Core\Mathf.cs" />
+    <Compile Include="src\Native\Dwmapi.cs" />
+    <Compile Include="src\AssaultCube\GameWorld.cs" />
+    <Compile Include="src\Core\GraphicsContext.cs" />
+    <Compile Include="src\Native\Kernel32.cs" />
+    <Compile Include="src\Structs\Margins.cs" />
+    <Compile Include="src\Structs\Matrix4x4.cs" />
+    <Compile Include="src\Core\MemoryContext.cs" />
+    <Compile Include="src\AssaultCube\Offsets.cs" />
+    <Compile Include="src\Core\Overlay.cs" />
+    <Compile Include="src\AssaultCube\PlayerEntity.cs" />
+    <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Native\User32.cs" />
+    <Compile Include="src\Structs\Point.cs" />
+    <Compile Include="src\Structs\Rect.cs" />
+    <Compile Include="src\Structs\Vector2.cs" />
+    <Compile Include="src\Structs\Vector2Int.cs" />
+    <Compile Include="src\Structs\Vector3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\Microsoft.DirectX.Direct3D.dll" />
+    <Content Include="lib\Microsoft.DirectX.Direct3DX.dll" />
+    <Content Include="lib\Microsoft.DirectX.dll" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
