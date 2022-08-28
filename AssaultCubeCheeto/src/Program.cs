@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Threading;
 using Cucumba.Cheeto.Core;
 using Cucumba.Cheeto.Structs;
 using Cucumba.Cheeto.Native;
@@ -13,7 +12,6 @@ namespace Cucumba.Cheeto
     {
         private const string PROCESS_NAME = "ac_client";
         private const string WINDOW_NAME = "AssaultCube";
-        private const int TARGET_FRAMERATE = 120;
 
         private GameWorld _gameWorld = null;
         private Overlay _overlay = null;
@@ -28,8 +26,6 @@ namespace Cucumba.Cheeto
         private bool _isAimbotActive = false;
         private bool _aimbotHasTarget = false;
         private PlayerEntity _aimbotTarget = null;
-
-        private readonly TimeSpan _sleep = new TimeSpan(0, 0, 0, 0, (int)(1f / TARGET_FRAMERATE * 1000));
 
         static void Main()
         {
@@ -86,8 +82,6 @@ namespace Cucumba.Cheeto
 
             while (true)
             {
-                Thread.Sleep(_sleep);
-
                 Tick();
 
                 if (_overlay.IsKeyPressed(User32.VK_END))
