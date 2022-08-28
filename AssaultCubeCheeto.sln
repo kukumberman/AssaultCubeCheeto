@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssaultCubeCheeto", "AssaultCubeCheeto\AssaultCubeCheeto.csproj", "{F1D3FF5B-712D-4906-AF42-B1ED81891748}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheeto.Overlay.ImGui", "Cheeto.Overlay.ImGui\Cheeto.Overlay.ImGui.csproj", "{E1EC98CC-E8F8-4A32-AB14-F573585EAC8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F1D3FF5B-712D-4906-AF42-B1ED81891748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1D3FF5B-712D-4906-AF42-B1ED81891748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1D3FF5B-712D-4906-AF42-B1ED81891748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1EC98CC-E8F8-4A32-AB14-F573585EAC8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1EC98CC-E8F8-4A32-AB14-F573585EAC8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1EC98CC-E8F8-4A32-AB14-F573585EAC8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1EC98CC-E8F8-4A32-AB14-F573585EAC8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
